@@ -275,6 +275,7 @@
     <div class="nav-tab"             onclick="goTo('vegetariano')">Vegetariano</div>
     <div class="nav-tab"             onclick="goTo('pastas')">Pasta y Mar</div>
     <div class="nav-tab"             onclick="goTo('asados')">Asados</div>
+    <div class="nav-tab"             onclick="goTo('ceviche')">Ceviche</div>
     <div class="nav-tab"             onclick="goTo('postres')">Postres</div>
     <div class="nav-tab"             onclick="goTo('jugos')">Jugos</div>
     <div class="nav-tab"             onclick="goTo('sodas')">Sodas</div>
@@ -564,6 +565,10 @@
         <div class="item-price">$20.000</div>
       </div>
       <div class="item">
+        <div class="item-body"><div class="item-name">Chicharrón a las Brasas</div></div>
+        <div class="item-price">$28.000</div>
+      </div>
+      <div class="item">
         <div class="item-body"><div class="item-name">Chuzo de Cerdo</div></div>
         <div class="item-price">$24.000</div>
       </div>
@@ -577,6 +582,10 @@
       </div>
       <div class="item">
         <div class="item-body"><div class="item-name">Costillas de Cerdo</div><div class="item-desc">Bañadas en Salsa BBQ o a la Naranja</div></div>
+        <div class="item-price">$35.000</div>
+      </div>
+      <div class="item">
+        <div class="item-body"><div class="item-name">Costichi</div><div class="item-desc">Bañadas en Salsa BBQ o a la Naranja</div></div>
         <div class="item-price">$35.000</div>
       </div>
       <div class="item">
@@ -608,7 +617,19 @@
 
   <hr class="section-end">
 
-  <!-- POSTRES -->
+  <!-- CEVICHE DE CHICHARRÓN -->
+  <section class="menu-section" id="ceviche">
+    <div class="section-header">
+      <h2 class="section-title">Ceviche de Chicharrón</h2>
+      <div class="section-ornament"><span>&#10022;</span></div>
+    </div>
+    <div class="items-grid">
+      <div class="item">
+        <div class="item-body"><div class="item-name">Ceviche de Chicharrón</div></div>
+        <div class="item-price">$27.000</div>
+      </div>
+    </div>
+  </section>
   <section class="menu-section" id="postres">
     <div class="section-header">
       <h2 class="section-title">Postres</h2>
@@ -833,6 +854,8 @@
       <div class="item"><div class="item-body"><div class="item-name">Gaseosa Manzana</div></div><div class="item-price">$4.000</div></div>
       <div class="item"><div class="item-body"><div class="item-name">Gaseosa Coca-Cola 1.5 LT</div></div><div class="item-price">$7.000</div></div>
       <div class="item"><div class="item-body"><div class="item-name">Hatsu</div></div><div class="item-price">$7.000</div></div>
+      <div class="item"><div class="item-body"><div class="item-name">Milo Caliente</div></div><div class="item-price">$7.000</div></div>
+      <div class="item"><div class="item-body"><div class="item-name">Milo Frío</div></div><div class="item-price">$7.000</div></div>
       <div class="item"><div class="item-body"><div class="item-name">Gatorade</div></div><div class="item-price">$8.000</div></div>
       <div class="item"><div class="item-body"><div class="item-name">Electrolic</div></div><div class="item-price">$10.000</div></div>
       <div class="item"><div class="item-body"><div class="item-name">Red Bull</div></div><div class="item-price">$12.000</div></div>
@@ -875,8 +898,8 @@
   const tabs = Array.from(document.querySelectorAll('.nav-tab'));
   const idToTab = {
     entradas:0, alitas:1, hamburguesas:2, salchipapas:3, quesadillas:4,
-    patacones:5, vegetariano:6, pastas:7, asados:8, postres:9,
-    jugos:10, sodas:11, malteadas:12, cocteles:13, cervezas:14, otros:15
+    patacones:5, vegetariano:6, pastas:7, asados:8, ceviche:9, postres:10,
+    jugos:11, sodas:12, malteadas:13, cocteles:14, cervezas:15, otros:16
   };
 
   function updateActive() {
