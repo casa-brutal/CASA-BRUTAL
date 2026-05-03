@@ -272,7 +272,6 @@
     <div class="nav-tab"             onclick="goTo('salchipapas')">Salchipapas</div>
     <div class="nav-tab"             onclick="goTo('quesadillas')">Quesadillas</div>
     <div class="nav-tab"             onclick="goTo('patacones')">Patacones</div>
-    <div class="nav-tab"             onclick="goTo('vegetariano')">Vegetariano</div>
     <div class="nav-tab"             onclick="goTo('pastas')">Pasta y Mar</div>
     <div class="nav-tab"             onclick="goTo('asados')">Asados</div>
     <div class="nav-tab"             onclick="goTo('ceviche')">Ceviche</div>
@@ -296,10 +295,7 @@
       <div class="section-ornament"><span>&#10022;</span></div>
     </div>
     <div class="items-grid">
-      <div class="item">
-        <div class="item-body"><div class="item-name">Yucas Crocantes</div><div class="item-desc">5 Bastones de yuca, acompañados con salsa de la casa</div></div>
-        <div class="item-price">$8.000</div>
-      </div>
+      
       <div class="item">
         <div class="item-body"><div class="item-name">Patacones Tradicionales</div><div class="item-desc">6 Patacones acompañado de hogao y guacamole de la casa</div></div>
         <div class="item-price">$8.000</div>
@@ -320,10 +316,7 @@
         <div class="item-body"><div class="item-name">Aros de Cebolla Dorados</div><div class="item-desc">6 Deliciosos y crujientes aros de cebolla empanizados, con ralladura de queso y acompañados de guacamole de la casa y salsa chipotle</div></div>
         <div class="item-price">$13.000</div>
       </div>
-      <div class="item">
-        <div class="item-body"><div class="item-name">Deditos de Mozzarella</div><div class="item-desc">6 Deditos de queso mozzarella empanizados, acompañados de reducción de arándanos y uva Isabella</div></div>
-        <div class="item-price">$14.000</div>
-      </div>
+
       <div class="item">
         <div class="item-body"><div class="item-name">Cacerola de Papa Criolla Gratinada</div><div class="item-desc">Papas criollas salteadas, queso fundido, tocineta crocante, acompañado con salsa de la casa y suero costeño</div></div>
         <div class="item-price">$16.000</div>
@@ -499,30 +492,6 @@
 
   <hr class="section-end">
 
-  <!-- VEGETARIANO -->
-  <section class="menu-section" id="vegetariano">
-    <div class="section-header">
-      <h2 class="section-title">Vegetariano</h2>
-      <div class="section-ornament"><span>&#10022;</span></div>
-    </div>
-    <div class="items-grid">
-      <div class="item">
-        <div class="item-body"><div class="item-name">Hamburguesa</div><div class="item-desc">Pan Brioche, tortilla de lentejas en salsa de ajo, Lechuga Crespa, tomate, aros de cebolla apanados, queso mozzarella, pepinillos agridulces, puerros, sourcream y guacamole de la casa</div></div>
-        <div class="item-price">$24.000</div>
-      </div>
-      <div class="item">
-        <div class="item-body"><div class="item-name">Ensalada de la Casa</div><div class="item-desc">Lechuga crespa, tomate, Espinacas, Champiñones, maicitos, zanahoria confitada, pepinos agridulces, cebolla puerro, mango, crotones, aderezo de la casa y parmesano</div></div>
-        <div class="item-price">$25.000</div>
-      </div>
-      <div class="item">
-        <div class="item-body"><div class="item-name">Quesadilla</div><div class="item-desc">Tortilla de maíz, champiñones, espinacas, maicitos, queso mozzarella, zanahoria caramelizada, salsa bechamel, lechuga y sourcream</div></div>
-        <div class="item-price">$28.000</div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-end">
-
   <!-- PASTA Y MAR -->
   <section class="menu-section" id="pastas">
     <div class="section-header">
@@ -567,10 +536,6 @@
       <div class="item">
         <div class="item-body"><div class="item-name">Chicharrón a las Brasas</div></div>
         <div class="item-price">$28.000</div>
-      </div>
-      <div class="item">
-        <div class="item-body"><div class="item-name">Chuzo de Cerdo</div></div>
-        <div class="item-price">$24.000</div>
       </div>
       <div class="item">
         <div class="item-body"><div class="item-name">Chuzo de Pollo</div></div>
@@ -898,8 +863,8 @@
   const tabs = Array.from(document.querySelectorAll('.nav-tab'));
   const idToTab = {
     entradas:0, alitas:1, hamburguesas:2, salchipapas:3, quesadillas:4,
-    patacones:5, vegetariano:6, pastas:7, asados:8, ceviche:9, postres:10,
-    jugos:11, sodas:12, malteadas:13, cocteles:14, cervezas:15, otros:16
+    patacones:5, pastas:6, asados:7, ceviche:8, postres:9,
+    jugos:10, sodas:11, malteadas:12, cocteles:13, cervezas:14, otros:15
   };
 
   function updateActive() {
