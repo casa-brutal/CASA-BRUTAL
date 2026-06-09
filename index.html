@@ -269,6 +269,7 @@
     <div class="nav-tab active"      onclick="goTo('entradas')">Entradas</div>
     <div class="nav-tab"             onclick="goTo('alitas')">Alitas</div>
     <div class="nav-tab"             onclick="goTo('hamburguesas')">Hamburguesas</div>
+    <div class="nav-tab"             onclick="goTo('sandwiches')">Sandwiches</div>
     <div class="nav-tab"             onclick="goTo('salchipapas')">Salchipapas</div>
     <div class="nav-tab"             onclick="goTo('quesadillas')">Quesadillas</div>
     <div class="nav-tab"             onclick="goTo('patacones')">Patacones</div>
@@ -391,6 +392,25 @@
       <div class="item featured">
         <div class="item-body"><div class="item-name featured">La Brutal</div><div class="item-desc">Pan Brioche, Carne de res desmechada en BBQ, chicharrón, queso mozzarella, aros de cebolla apanados, trozos de madurito, tocineta, lechuga, tomate, pepinillos agridulces, salsa ranch y salsa de la casa</div></div>
         <div class="item-price">$32.000</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-end">
+
+  <!-- SANDWICHES -->
+  <section class="menu-section" id="sandwiches">
+    <div class="section-header">
+      <h2 class="section-title">Sandwiches</h2>
+      <div class="section-ornament"><span>&#10022;</span></div>
+    </div>
+    <div class="items-grid">
+      <div class="item">
+        <div class="item-body">
+          <div class="item-name">Club House</div>
+          <div class="item-desc">Pan · Huevo · Jamón · Queso Gratinado · Lechuga · Tomate · Salsa de la Casa · Tocineta · Porción Papa · Pollo Desmechado</div>
+        </div>
+        <div class="item-price">$23.000</div>
       </div>
     </div>
   </section>
@@ -798,9 +818,9 @@
   const sections = Array.from(document.querySelectorAll('.menu-section'));
   const tabs = Array.from(document.querySelectorAll('.nav-tab'));
   const idToTab = {
-    entradas:0, alitas:1, hamburguesas:2, salchipapas:3, quesadillas:4,
-    patacones:5, pastas:6, asados:7, ceviche:8, postres:9,
-    jugos:10, sodas:11, malteadas:12, cocteles:13, cervezas:14, otros:15
+    entradas:0, alitas:1, hamburguesas:2, sandwiches:3, salchipapas:4, quesadillas:5,
+    patacones:6, pastas:7, asados:8, ceviche:9, postres:10,
+    jugos:11, sodas:12, malteadas:13, cocteles:14, cervezas:15, otros:16
   };
 
   function updateActive() {
