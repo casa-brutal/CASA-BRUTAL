@@ -279,7 +279,6 @@
     <div class="nav-tab"             onclick="goTo('postres')">Postres</div>
     <div class="nav-tab"             onclick="goTo('jugos')">Jugos</div>
     <div class="nav-tab"             onclick="goTo('sodas')">Sodas</div>
-    <div class="nav-tab"             onclick="goTo('malteadas')">Malteadas</div>
     <div class="nav-tab"             onclick="goTo('cocteles')">Cocteles</div>
     <div class="nav-tab"             onclick="goTo('cervezas')">Cervezas</div>
     <div class="nav-tab"             onclick="goTo('otros')">Otros</div>
@@ -520,10 +519,6 @@
         <div class="item-price">$28.000</div>
       </div>
       <div class="item">
-        <div class="item-body"><div class="item-name">Chuleta de Cerdo</div></div>
-        <div class="item-price">$32.000</div>
-      </div>
-      <div class="item">
         <div class="item-body"><div class="item-name">Costillas de Cerdo</div><div class="item-desc">Bañadas en Salsa BBQ o a la Naranja</div></div>
         <div class="item-price">$35.000</div>
       </div>
@@ -658,41 +653,6 @@
 
   <hr class="section-end">
 
-  <!-- MALTEADAS -->
-  <section class="menu-section" id="malteadas">
-    <div class="section-header">
-      <h2 class="section-title">Malteadas</h2>
-      <div class="section-ornament"><span>&#10022;</span></div>
-    </div>
-    <div class="items-grid">
-      <div class="item"><div class="item-body"><div class="item-name">Besito de Fresa</div></div><div class="item-price">$15.000</div></div>
-      <div class="item"><div class="item-body"><div class="item-name">Lujuria de Oreo</div></div><div class="item-price">$15.000</div></div>
-      <div class="item"><div class="item-body"><div class="item-name">Deseo de Vainilla</div></div><div class="item-price">$15.000</div></div>
-    </div>
-
-    <div style="height:14px"></div>
-    <div class="salsas-block">
-      <div class="salsas-label">Toppings Disponibles</div>
-      <div class="salsas-list">Lluvia de chocolate &nbsp;·&nbsp; Lluvia de colores &nbsp;·&nbsp; Masmelo &nbsp;·&nbsp; Oreo &nbsp;·&nbsp; Chips de chocolate &nbsp;·&nbsp; Chips de chocolate blanco &nbsp;·&nbsp; M&amp;M</div>
-    </div>
-
-    <div style="height:18px"></div>
-    <div class="section-header" style="margin-bottom:16px">
-      <h3 class="section-title" style="font-size:20px">Fresa con Crema</h3>
-    </div>
-    <div class="items-grid">
-      <div class="item">
-        <div class="item-body">
-          <div class="item-name">Fresa con Crema</div>
-          <div class="item-desc">Elige 4 toppings: Lluvia de chocolate · Lluvia de colores · Masmelo · Oreo · Chips de chocolate · Chips de chocolate blanco · M&amp;M</div>
-        </div>
-        <div class="item-price">$15.000</div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-end">
-
   <!-- COCTELES -->
   <section class="menu-section" id="cocteles">
     <div class="section-header">
@@ -804,7 +764,7 @@
   const idToTab = {
     entradas:0, alitas:1, hamburguesas:2, sandwiches:3, salchipapas:4, quesadillas:5,
     patacones:6, asados:7, ceviche:8, postres:9,
-    jugos:10, sodas:11, malteadas:12, cocteles:13, cervezas:14, otros:15
+    jugos:10, sodas:11, cocteles:12, cervezas:13, otros:14
   };
 
   function updateActive() {
